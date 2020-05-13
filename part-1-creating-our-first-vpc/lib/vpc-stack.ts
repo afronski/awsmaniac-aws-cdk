@@ -10,8 +10,8 @@ export class VpcStack extends cdk.Stack {
       natGateways: 3
     });
 
-    const ssh = new SecurityGroup(this, 'SSH-SG', {
-      securityGroupName: 'open-ssh',
+    const ssh = new SecurityGroup(this, 'SG-SSH', {
+      securityGroupName: 'ssh-opened',
       vpc,
       allowAllOutbound: true
     });
