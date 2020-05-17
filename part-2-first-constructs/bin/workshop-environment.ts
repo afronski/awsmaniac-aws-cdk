@@ -9,5 +9,9 @@ import { ParticipantsStack } from '../lib/participants-stack';
 
 const app = new cdk.App();
 
-new CommonResourcesStack(app, 'CommonWorkshopResources');
-new ParticipantsStack(app, 'ParticipantResources');
+const commons = new CommonResourcesStack(app, 'CommonWorkshopResources');
+
+new ParticipantsStack(app, 'ParticipantResources', {
+  commonGroup: commons.commonGroup,
+  commonBucket: commons.commonBucket
+});
