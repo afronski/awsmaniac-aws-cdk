@@ -2,5 +2,5 @@
   "@aws-cdk/core:enableStackNameDuplicates": "true",
   "aws-cdk:enableDiffNoFail": "true",
   "numberOfParticipants": 1,
-  "initialPassword": "ExamplePasswordForWorkshop!"
+  "initialPassword": "ExamplePasswordForWorkshopIn2020!"
 }

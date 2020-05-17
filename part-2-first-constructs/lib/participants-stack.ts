@@ -17,7 +17,11 @@ export class ParticipantsStack extends cdk.Stack {
       const zeroPadded = i.toString().padStart(prefixSize, '0');
 
       new ParticipantVpc(this, `ParticipantVpcForUser${zeroPadded}`);
-      new Participant(this, `ParticipantUser${zeroPadded}`, props);
+
+      new Participant(this, `ParticipantUser${zeroPadded}`, {
+        zeroPadded,
+        ...props
+      });
     }
   }
 

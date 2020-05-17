@@ -25,7 +25,8 @@ export class Participant extends cdk.Construct {
     });
 
     let userBucket = new s3.Bucket(this, `ParticipantBucket${props?.zeroPadded}`, {
-      bucketName: `bucket-for-user-${props?.zeroPadded}`
+      bucketName: `bucket-for-user-${props?.zeroPadded}`,
+      removalPolicy: cdk.RemovalPolicy.DESTROY
     });
 
     userBucket.grantReadWrite(participant);

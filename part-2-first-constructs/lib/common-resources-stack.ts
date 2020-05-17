@@ -11,7 +11,8 @@ export class CommonResourcesStack extends cdk.Stack {
     super(scope, id, props);
 
     this.commonBucket = new s3.Bucket(this, 'CommonBucket', {
-      bucketName: 'shared-bucket-for-all'
+      bucketName: 'shared-bucket-for-all',
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
 
     this.commonGroup = new iam.Group(this, 'WorkshopParticipants');
