@@ -1,8 +1,8 @@
 {
-  "name": "part-2-first-constructs",
+  "name": "part-4-explicit-dependencies",
   "version": "1.0.0",
   "bin": {
-    "app": "bin/vpc-stack.js"
+    "app": "bin/workshop-environment.js"
   },
   "scripts": {
     "build": "tsc",
