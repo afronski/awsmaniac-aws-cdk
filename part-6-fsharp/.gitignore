@@ -1,0 +1,85 @@
+# CDK asset staging directory:
+.cdk.staging/
+cdk.out/
+
+# Parcel build directories:
+.cache/
+.build/
+
+# CDK asset staging directory:
+.cdk.staging
+cdk.out
+
+# User-specific files:
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results:
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# MSTest test Results:
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit:
+*.VisualState.xml
+TestResult.xml
+
+# Build Results of an ATL Project:
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Benchmark Results:
+BenchmarkDotNet.Artifacts/
+
+# .NET Core:
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Files built by Visual Studio:
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# NuGet Packages:
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
